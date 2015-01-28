@@ -43,7 +43,7 @@
 				<li><a href="include/servicios.php">Servicios</a></li>
 				<li><a href="include/contactenos.php">Contáctenos</a></li>
 			</ul>
-			<a href="#" id="pull">CodeC</a>
+			<a href="#" id="pull"></a>
 		</nav>
 
 <div class="doby"></div>		
