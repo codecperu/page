@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Index</title>
+	<meta name="description" content="Página oficial de la empresa Codec Perú">
+    <meta name="keywords" content="codec, responsive, html5, css3, Perú">
+    <meta name="author" content="Codec Perú">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+
+    <!-- Fuentes de Google -->
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet'>
+
+    <!-- JavaScript -->
+    <script src="js/modernizr.custom.js"></script>
+    <script src="js/respond.min.js"></script>
+
+</head>
+<body>
+
+<nav id="menu">
+		<ul class="clearfix-container">
+			<div id="logo"></div>
+			<li><a href="#">Inicio</a></li>
+			<li><a href="#">Servicios</a></li>
+			<li><a href="#">Nosotros</a></li>
+			<li><a href="#">Diseño</a></li>
+			<li><a href="#">Blog</a></li>
+			<li><a href="#">Contactenos</a></li>
+		</ul>
+		<a href="#" id="pull">Menú</a>
+	</nav>	
+
+
+
+
+<footer>
+		<p> Codec Perú  - Todos los derechos reservados 2015</p>
+		<a href="https://www.facebook.com/techservicesperu?fref=ts" target="_blank">
+		<img class="iconos" src="img/facebook.png" img border="0" /></a>
+		<a href="https://twitter.com/carlospp24" target="_blank"><img class="iconos" src="img/twitter.png" img border="0" /></a>
+
+</footer>
+
+
+
+<script>
+    $(function() {
+      var pull    = $('#pull');
+        menu    = $('nav ul');
+        menuHeight  = menu.height();
+
+      $(pull).on('click', function(e) {
+        e.preventDefault();
+        menu.slideToggle();
+      });
+
+      $(window).resize(function(){
+            var w = $(window).width();
+            if(w > 320 && menu.is(':hidden')) {
+              menu.removeAttr('style');
+            }
+        });
+    });
+  </script>
+</body>
+</html>
